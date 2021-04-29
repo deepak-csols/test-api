@@ -1,6 +1,14 @@
 
-{ "link" : [ {"age": "18", "url":"https://google.com" },
-{"age": "25", "url":"https://facebook.com" },
-{"age": "30", "url":"https://goole.com" } 
-     ]
+{
+  "Post": {
+    "title": "string",
+    "views": "int",
+    "published": "boolean",
+    "createdAt": "date",
+    "comments": "Comment[]"
+  },
+  "Comment": {
+    "body": "string",
+    "post": "Post"
+  }
 }
